@@ -61,7 +61,7 @@ export const createSts = async (req, res) => {
         const result = await pool.query('INSERT INTO status_tkt (name_sts) VALUES ($1) RETURNING *', [name_sts]);
 
         // Responder con el status creado en la respuesta
-        res.status(201).json(result.rows[0]);
+        res.status(201).send();
 
     } catch (error) {
         // Manejar errores en caso de problemas durante la ejecución de la consulta
@@ -80,7 +80,7 @@ export const updateSts= async (req, res) => {
         const { name_sts } = req.body;
 
         // Actualizar el nombre del status en la base de datos
-        const result = await pool.query('UPDATE status_tkt SET name_sts = $1 WHERE id_sts = $2', [name_sts, depaId]);
+        const result = await pool.query('UPDATE status_tkt SET name_sts = $1 WHERE id_sts = $2', [name_sts, stsId]);
 
         // Verificar si la actualización fue exitosa
         if (result.rowCount > 0) {

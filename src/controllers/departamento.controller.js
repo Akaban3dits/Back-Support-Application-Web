@@ -61,7 +61,7 @@ export const createDepa = async (req, res) => {
         const result = await pool.query('INSERT INTO departamento (name_dep) VALUES ($1) RETURNING *', [name_dep]);
 
         // Responder con el departamento creado en la respuesta
-        res.status(201).json(result.rows[0]);
+        res.status(201).send();
 
     } catch (error) {
         // Manejar errores en caso de problemas durante la ejecución de la consulta
