@@ -1,0 +1,25 @@
+2024-07-13T21:04:31.184Z - 500 - Forzado un error para probar el manejo de errores
+Error: Forzado un error para probar el manejo de errores
+    at login (file:///C:/Users/admin/Documents/Proyectos%20Practica%202024/NODEJS/HelpDesk%20Back/src/controllers/authControllers.js:18:19)
+    at Layer.handle [as handle_request] (C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\express\lib\router\index.js:47:12)
+
+2024-07-13T22:58:57.634Z - 500 - no existe la relación «categori»
+error: no existe la relación «categori»
+    at C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getCate (file:///C:/Users/admin/Documents/Proyectos%20Practica%202024/NODEJS/HelpDesk%20Back/src/controllers/categoriaController.js:6:24)
+
+2024-07-13T23:06:06.164Z - 500 - no existe la columna «i_cate»
+error: no existe la columna «i_cate»
+    at C:\Users\admin\Documents\Proyectos Practica 2024\NODEJS\HelpDesk Back\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async deleteCate (file:///C:/Users/admin/Documents/Proyectos%20Practica%202024/NODEJS/HelpDesk%20Back/src/controllers/categoriaController.js:71:24)
+
